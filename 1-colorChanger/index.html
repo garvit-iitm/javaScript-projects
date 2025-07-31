@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Background Color Switcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen">
+    <nav class="flex items-center justify-center text-3xl px-8 py-4 bg-gray-800 shadow">
+        
+        <div class="space-x-6">
+            <a href="/index.html" class="hover:text-teal-400 transition">Home</a>
+            <a href="#" class="hover:text-teal-400 transition">About</a>
+        </div>
+    </nav>
+
+    <div class="canvas flex flex-col items-center justify-center mt-16">
+      <h1 class="text-3xl font-bold mb-6">Color Scheme Switcher</h1>
+      <div class="buttons flex space-x-6 mb-8">
+        <span class="button w-12 h-12 rounded-full bg-gray-700 border-2 border-gray-500 cursor-pointer" id="grey"></span>
+        <span class="button w-12 h-12 rounded-full bg-white border-2 border-gray-500 cursor-pointer" id="white"></span>
+        <span class="button w-12 h-12 rounded-full bg-blue-600 border-2 border-blue-400 cursor-pointer" id="blue"></span>
+        <span class="button w-12 h-12 rounded-full bg-yellow-400 border-2 border-yellow-300 cursor-pointer" id="yellow"></span>
+      </div>
+      <h2 class="text-lg text-gray-300">
+        Try clicking on one of the colors above to change the background color of this page.
+      </h2>
+    </div>
+
+  </body>
+
+</html>
