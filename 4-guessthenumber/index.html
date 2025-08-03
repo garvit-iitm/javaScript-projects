@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess The Number 🎲</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess The Number 🎲</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-900 text-white min-h-screen ">
-    <nav class="flex items-center justify-center text-3xl px-8 py-4 bg-gray-800 shadow">
-        
-        <div class="space-x-6">
-            <a href="/index.html" class="hover:text-teal-400 transition">Home</a>
-            <a href="#" class="hover:text-teal-400 transition">About</a>
-        </div>
-    </nav>
+<body class="bg-gray-900 text-white min-h-screen">
+  <nav class="flex items-center justify-center text-3xl px-8 py-4 bg-gray-800 shadow">
+    <div class="space-x-6">
+      <a href="/index.html" class="hover:text-teal-400 transition">Home</a>
+      <a href="#" class="hover:text-teal-400 transition">About</a>
+    </div>
+  </nav>
 
-    <script src="script.js"></script>
+  <form>
+    <div class="flex flex-col items-center justify-center mt-6 max-w-md mx-auto p-6 bg-gray-800 rounded-lg">
+      <h1 class="text-3xl font-bold mb-6">Guess The Number 🎲</h1>
+      <p class="text-lg text-gray-300 mb-2">Try to guess the number between 1 and 100!</p>
+      <p class="text-lg text-gray-300 mb-4">You have 10 attempts to guess the right number</p>
+      
+      <input type="number" id="guessInput" class="border border-gray-700 bg-gray-800 text-white rounded px-4 py-2 mb-4 w-64" placeholder="Enter your guess" />
+      <button type="button" id="submitGuess" class="bg-teal-600 hover:bg-teal-800 text-white font-bold py-2 px-4 rounded transition">Submit Guess</button>
+      
+      <div id="resultMessage" class="mt-4 text-lg"></div>
+      
+      <div class="mt-2 text-lg text-white flex justify-center">
+        Attempts Left: <span class="attemptsLeft ml-2">10</span>
+      </div>
+      
+      <div class="mt-4 text-lg text-white">
+        Previous Guesses: <span class="previousGuesses"></span>
+      </div>
+      
+      <!-- Button Container -->
+      <div id="startOverBtnContainer" class="mt-4 text-lg flex justify-center"></div>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
