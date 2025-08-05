@@ -54,7 +54,7 @@ To explore these projects:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/js-mini-projects.git](https://github.com/your-username/js-mini-projects.git)
+    git clone [https://github.com/garvit-iitm/javaScriptprojects.git](https://github.com/garvit-iitm/javaScriptprojects.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
